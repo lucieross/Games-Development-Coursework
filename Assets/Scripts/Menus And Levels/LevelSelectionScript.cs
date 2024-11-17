@@ -9,7 +9,7 @@ public class LevelSelectionScript : MonoBehaviour
 
     void Start()
     {
-        //PlayerPrefs.DeleteAll(); //for testing to reset progress 
+        PlayerPrefs.DeleteAll(); //for testing to reset progress 
 
         // Gets the highest level that the player has reached and unlocks any they have reached
         int levelAt = PlayerPrefs.GetInt("levelAt", 1);
